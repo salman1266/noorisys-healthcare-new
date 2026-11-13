@@ -15,7 +15,7 @@ export default function HomePage() {
       {/* SECTION 3 — ABOUT NOORISYS HEALTHCARE */}
       <AboutNoorisys />
 
-      {/* SECTION 4 — OUR HEALTHCARE PRODUCTS (All 15 Products in 3-Card Grid) */}
+      {/* SECTION 4 — A PORTFOLIO OF HEALTHCARE INNOVATIONS (All 15 Products in 3-Card Grid) */}
       <ProductShowcase />
 
       {/* SECTION 5 — WHAT WE DO (Healthcare Software, Digital Solutions, Tech Development) */}

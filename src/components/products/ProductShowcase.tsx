@@ -91,7 +91,7 @@ export const ProductShowcase: React.FC<ProductShowcaseProps> = ({
               PORTFOLIO DIRECTORY
             </div>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-              {title || "Our Healthcare Products"}
+              {title || "A Portfolio of Healthcare Innovations"}
             </h2>
           </div>
 

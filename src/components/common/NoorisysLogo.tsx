@@ -3,12 +3,14 @@ import Link from "next/link";
 
 interface LogoProps {
   className?: string;
+  imageClassName?: string;
   showTagline?: boolean;
   variant?: "header" | "footer" | "standalone";
 }
 
 export const NoorisysLogo: React.FC<LogoProps> = ({
   className = "",
+  imageClassName = "",
   variant = "header",
 }) => {
   const isFooter = variant === "footer";
@@ -26,11 +28,13 @@ export const NoorisysLogo: React.FC<LogoProps> = ({
           src="/logos/noorisys-logo.png"
           alt="Noorisys Technologies"
           className={`${
-            isFooter
-              ? "h-11 sm:h-13 md:h-15 w-auto max-w-[260px] sm:max-w-[320px] md:max-w-[360px]"
+            imageClassName
+              ? imageClassName
+              : isFooter
+              ? "h-12 sm:h-14 md:h-16 w-auto max-w-[280px] sm:max-w-[340px] md:max-w-[380px]"
               : isStandalone
-              ? "h-10 sm:h-12 md:h-13 w-auto max-w-[230px] sm:max-w-[270px] md:max-w-[300px]"
-              : "h-9 sm:h-10 md:h-11 w-auto max-w-[210px] sm:max-w-[250px] md:max-w-[280px]"
+              ? "h-11 sm:h-13 md:h-15 w-auto max-w-[260px] sm:max-w-[300px] md:max-w-[340px]"
+              : "h-11 sm:h-13 md:h-15 lg:h-16 w-auto max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[380px]"
           } object-contain`}
         />
       </div>
